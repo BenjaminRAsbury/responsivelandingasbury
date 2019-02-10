@@ -1,0 +1,22 @@
+{
+  "name": "responsivelanding",
+  "version": "3.0.1",
+  "description": "Single Page Resonpsive Landing Site",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjaminRAsbury/responsivelandingasbury.git"
+  },
+  "author": "Ben Asbury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenjaminRAsbury/responsivelandingasbury/issues"
+  },
+  "homepage": "https://github.com/BenjaminRAsbury/responsivelandingasbury#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
