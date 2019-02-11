@@ -1,6 +1,6 @@
 // Media Query Mixins
 @mixin mediaSm {
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 400px) {
     @content;
   }
 }
@@ -12,7 +12,7 @@
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 769) and (max-width: 1170px) {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
     @content;
   }
 }

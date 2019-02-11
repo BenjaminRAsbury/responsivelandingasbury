@@ -1,0 +1,102 @@
+@import "config";
+
+* {
+  box-sizing: border-box;
+}
+
+.break {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}
+
+.grid > article:nth-child(odd) {
+  background: #c31432;
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);
+  background: linear-gradient(to right, #240b36, #c31432);
+}
+
+main > section:nth-child(2) {
+  background: #16161d;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+}
+
+p {
+  color: #dbdbdb;
+  font-size: 25px;
+  padding-left: 20px;
+  margin: 0;
+}
+
+footer {
+  background: #16161d;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  background-color: #16161d;
+  width: 100%;
+  height: 120px;
+  color: #dbdbdb;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+i {
+  align-items: center;
+  justify-self: end;
+  padding-right: 20px;
+}
+
+h1 {
+  color: #dbdbdb;
+  font-size: 70px;
+  margin: 1rem;
+  text-align: center;
+}
+
+article {
+  background-color: #16161d;
+  position: relative;
+  height: 250px;
+  align-items: end;
+  display: grid;
+}
+
+article > p {
+  font-size: 1.5em;
+  color: #dbdbdb;
+  text-align: center;
+  border-top: 1.5px solid #dbdbdb;
+  padding: 5px;
+}
+
+body {
+  background: #dbdbdb;
+  padding-bottom: 0;
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  min-height: calc(100vh - 100px);
+}
+
+@import "mobile";
